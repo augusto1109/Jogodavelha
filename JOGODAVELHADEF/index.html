@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Jogo da Velha</h1>
+    
+    <div id="board">
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+
+    <div class="players">
+      <div>
+        <label for="player1">Jogador 1:</label>
+        <input type="text" class="inputs" id="player1" placeholder="Nick do Jogador 1">
+        <span id="player1Wins">Vitórias: 0</span>
+      </div>
+      <div>
+        <label for="player2">Jogador 2:</label>
+        <input type="text" class="inputs" id="player2" placeholder="Nick do Jogador 2">
+        <span id="player2Wins">Vitórias: 0</span>
+      </div>
+    </div>
+    
+    <div id="message"></div>
+    <button id="resetButton">Reiniciar Placar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
